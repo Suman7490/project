@@ -1,6 +1,52 @@
+body{
+  overflow-x: hidden;
+  cursor: none;
+}
+::-webkit-scrollbar{
+  width: .5rem;
+}
+::-webkit-scrollbar-track{
+background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+background-color: rgb(187, 3, 233);
+border-radius: 1rem;
+background-clip: content-box;
+}
+
+
+
+
+
+
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
 }
+
+/* Custom circle cursor */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.2s ease;
+  z-index: 1000;
+}
+
+/* The area where the cursor size will increase on hover */
+.hover-area {
+  cursor: none; 
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -13,7 +59,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +68,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
